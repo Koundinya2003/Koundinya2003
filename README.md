@@ -96,21 +96,5 @@ My personal portfolio site.
 
 <br>
 
-## 📈 GitHub Stats
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Koundinya2003&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Koundinya2003&theme=tokyonight&hide_border=true" height="165"/>
-</div>
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Koundinya2003&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
-</div>
-
-<br>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,100:6366F1&height=100&section=footer"/>
-
 <sub>Thanks for stopping by — let's build something useful together. 🚀</sub>
 </div>
