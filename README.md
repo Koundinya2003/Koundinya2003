@@ -62,47 +62,68 @@ open_to:   Product Manager roles · AI product collaborations
 
 ## 🚀 Featured Work
 
+<div align="center">
+
+![MVPs](https://img.shields.io/badge/MVPs-2-EC4899?style=for-the-badge&labelColor=0B1024)
+![AI Projects](https://img.shields.io/badge/AI_Projects-4-06B6D4?style=for-the-badge&labelColor=0B1024)
+![PRDs](https://img.shields.io/badge/PRDs_%26_Case_Studies-4-8B5CF6?style=for-the-badge&labelColor=0B1024)
+
+</div>
+
+### 🧪 MVPs
+
+<sub>Working prototypes built to test a hypothesis — instrumented, scoped, and honest about what they haven't proven yet.</sub>
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 📈 [Prioritization, Metrics &amp; Growth](https://github.com/Koundinya2003/Prioritization-Metrics-Growth)
+#### 👗 [Nykaa Fit](https://github.com/Koundinya2003/nykaa-fit-mvp)
 
-Why urban Indian mobile users avoid voice input — and the growth strategy to fix it. Full KPI tree, prioritization framework and a defensible bet.
+A Nykaa Fashion–style storefront with personalised size guidance on the product page. The engine is deterministic and offline — your measurements against the brand's published chart — and it **declines to answer rather than guess**. Ships with an A/B experiment and a Fit Lab that reports "not enough data" instead of inventing a result.
 
-![Product Strategy](https://img.shields.io/badge/Product_Strategy-6366F1?style=flat-square)
-![Growth](https://img.shields.io/badge/Growth-8B5CF6?style=flat-square)
-![KPI Tree](https://img.shields.io/badge/KPI_Tree-06B6D4?style=flat-square)
+[![Live demo](https://img.shields.io/badge/Live_demo-22C55E?style=flat-square&logo=vercel&logoColor=white)](https://nykaa-fit-mvp.vercel.app/)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Experiment](https://img.shields.io/badge/Experiment-EC4899?style=flat-square)
 
 </td>
 <td width="50%" valign="top">
 
-### 🔧 [n8n Product Teardown](https://github.com/Koundinya2003/n8n-product-teardown)
+#### 🛒 [Blinkit AI Assistant](https://github.com/Koundinya2003/Blinkit-Ai_assistantV1)
 
-A structured teardown of n8n — onboarding gaps, activation metrics and a prioritized fix list, written the way I'd hand it to an engineering team.
+An experiment in bolting a conversational assistant onto a quick-commerce shopping flow — testing whether chat beats search when you're assembling a grocery basket.
 
-![Teardown](https://img.shields.io/badge/Teardown-A855F7?style=flat-square)
-![Activation](https://img.shields.io/badge/Activation-06B6D4?style=flat-square)
-![Onboarding](https://img.shields.io/badge/Onboarding-6366F1?style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Prototype](https://img.shields.io/badge/Prototype-EC4899?style=flat-square)
 
 </td>
 </tr>
+</table>
+
+### 🤖 AI Projects
+
+<sub>Applied GenAI where the constraint is trust — assistants that cite, decline, and stay inside what they can actually verify.</sub>
+
+<table>
 <tr>
 <td width="50%" valign="top">
 
-### 📝 [Eureka PRD](https://github.com/Koundinya2003/Eureka_PRD)
+#### 🎯 [Recruiter Info](https://github.com/Koundinya2003/recruiter_info)
 
-Teardown of the Eureka learning app: where onboarding leaks users, what the data implies, and the single biggest growth opportunity worth funding.
+Describe the roles you want in plain English. It queries public job APIs and companies' own boards, **validates every posting before showing it**, finds publicly published contacts, and tracks each application. It never invents a job, a person, or an email — "could not confirm" is a first-class outcome.
 
-![PRD](https://img.shields.io/badge/PRD-EC4899?style=flat-square)
-![User Research](https://img.shields.io/badge/User_Research-8B5CF6?style=flat-square)
+[![Live demo](https://img.shields.io/badge/Live_demo-22C55E?style=flat-square&logo=render&logoColor=white)](https://recruiter-info-1.onrender.com/)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
 
-### 📊 [Wealth Monitor &amp; Review Intelligence](https://github.com/Koundinya2003/wealth-monitor-review-intelligence)
+#### 📊 [Wealth Monitor](https://github.com/Koundinya2003/wealth-monitor-review-intelligence)
 
-An AI personal-finance coach for Indian users — personalized planning, wealth projections and AI-driven market discovery.
+An AI personal-finance coach for Indian users — personalised investment planning, wealth projections and AI-driven market discovery, backed by a review-intelligence pipeline.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
@@ -113,44 +134,74 @@ An AI personal-finance coach for Indian users — personalized planning, wealth 
 <tr>
 <td width="50%" valign="top">
 
-### 🔍 [AI Discovery Engine](https://github.com/Koundinya2003/AI-Discovery-Engine)
+#### 🔍 [AI Discovery Engine](https://github.com/Koundinya2003/AI-Discovery-Engine)
 
 Search app reviews at scale, surface the themes hiding inside them, then interrogate the whole corpus through an AI assistant.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![NLP](https://img.shields.io/badge/NLP-8B5CF6?style=flat-square)
+![NLP](https://img.shields.io/badge/NLP-06B6D4?style=flat-square)
 
 </td>
 <td width="50%" valign="top">
 
-### 🤖 [MF FAQ Chatbot](https://github.com/Koundinya2003/MF_FAQ_CB)
+#### 🤖 [MF FAQ Chatbot](https://github.com/Koundinya2003/MF_FAQ_CB)
 
-A facts-only assistant for mutual fund schemes — expense ratios, exit loads, SIP minimums, ELSS lock-ins. No opinions, no hallucinated advice.
+A facts-only assistant for mutual fund schemes — expense ratios, exit loads, SIP minimums, ELSS lock-ins. No opinions, no invented advice.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![FinTech](https://img.shields.io/badge/FinTech-06B6D4?style=flat-square)
 
 </td>
 </tr>
+</table>
+
+### 📝 PRDs & Case Studies
+
+<sub>The written half of the job — teardowns, business cases and prioritization work, argued to a decision rather than a summary.</sub>
+
+<table>
 <tr>
 <td width="50%" valign="top">
 
-### 🛒 [Blinkit AI Assistant](https://github.com/Koundinya2003/Blinkit-Ai_assistantV1)
+#### 💼 [Engati × Canara Bank](https://github.com/Koundinya2003/engati-pitch-prd)
 
-An experiment in bolting a conversational assistant onto a quick-commerce shopping flow.
+An executive business case: pitch Engati to Canara Bank's CEO on Day 0, then return at Day 180 with measured evidence to justify renewal and a price increase. Baseline, operating model, pilot roadmap with exit criteria — and a scorecard agreed **before** deployment, not after.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Experiment](https://img.shields.io/badge/Experiment-A855F7?style=flat-square)
+![Business Case](https://img.shields.io/badge/Business_Case-8B5CF6?style=flat-square)
+![Pitch](https://img.shields.io/badge/CEO_Pitch-8B5CF6?style=flat-square)
 
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [Portfolio](https://github.com/Koundinya2003/Portfolio)
+#### 📈 [Prioritization, Metrics &amp; Growth](https://github.com/Koundinya2003/Prioritization-Metrics-Growth)
 
-My personal portfolio site — the longer version of this page.
+Why urban Indian mobile users avoid voice input — and the growth strategy to fix it. Full KPI tree, prioritization framework and a defensible bet.
 
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Product Strategy](https://img.shields.io/badge/Product_Strategy-8B5CF6?style=flat-square)
+![Growth](https://img.shields.io/badge/Growth-8B5CF6?style=flat-square)
+![KPI Tree](https://img.shields.io/badge/KPI_Tree-8B5CF6?style=flat-square)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🔧 [n8n Product Teardown](https://github.com/Koundinya2003/n8n-product-teardown)
+
+A structured teardown of n8n — onboarding gaps, activation metrics and a prioritized fix list, written the way I'd hand it to an engineering team.
+
+![Teardown](https://img.shields.io/badge/Teardown-8B5CF6?style=flat-square)
+![Activation](https://img.shields.io/badge/Activation-8B5CF6?style=flat-square)
+
+</td>
+<td width="50%" valign="top">
+
+#### 📝 [Eureka PRD](https://github.com/Koundinya2003/Eureka_PRD)
+
+Teardown of the Eureka learning app: where onboarding leaks users, what the data implies, and the single biggest growth opportunity worth funding.
+
+![PRD](https://img.shields.io/badge/PRD-8B5CF6?style=flat-square)
+![User Research](https://img.shields.io/badge/User_Research-8B5CF6?style=flat-square)
 
 </td>
 </tr>
