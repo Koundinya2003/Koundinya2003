@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Where I spend my time: product strategy and roadmapping, discovery and user research, metrics and experimentation, applied GenAI prototyping">
+  <title>Where I spend my time</title>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="f1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="760" y2="0">
+      <stop offset="0" stop-color="#6366F1"/><stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="f2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="760" y2="0">
+      <stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="f3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="760" y2="0">
+      <stop offset="0" stop-color="#A855F7"/><stop offset="1" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="f4" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="760" y2="0">
+      <stop offset="0" stop-color="#EC4899"/><stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="320" y2="0" spreadMethod="repeat">
+      <stop offset="0"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".5"  stop-color="#ffffff" stop-opacity=".34"/>
+      <stop offset="1"   stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-320 0" to="0 0" dur="3.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+      .lbl{font-size:19px;font-weight:600;fill:#1E293B}
+      .track{fill:#0F172A;fill-opacity:.07}
+      .bar{animation:grow 1.6s cubic-bezier(.22,1,.36,1) backwards}
+      .d1{animation-delay:.10s}.d2{animation-delay:.28s}.d3{animation-delay:.46s}.d4{animation-delay:.64s}
+      @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="260" rx="26" fill="url(#card)"/>
+  <rect x=".75" y=".75" width="1198.5" height="258.5" rx="25.25" fill="none" stroke="#6366F1" stroke-opacity=".22" stroke-width="1.5"/>
+
+  <g transform="translate(44,34)">
+    <circle cx="6" cy="8" r="5" fill="#6366F1"/>
+    <text class="lbl" x="24" y="14">Product strategy &amp; roadmapping</text>
+  </g>
+  <g transform="translate(430,34)">
+    <rect class="track" width="726" height="16" rx="8"/>
+    <g class="bar d1"><rect width="640" height="16" rx="8" fill="url(#f1)"/><rect width="640" height="16" rx="8" fill="url(#sheen)"/></g>
+  </g>
+
+  <g transform="translate(44,90)">
+    <circle cx="6" cy="8" r="5" fill="#8B5CF6"/>
+    <text class="lbl" x="24" y="14">Discovery &amp; user research</text>
+  </g>
+  <g transform="translate(430,90)">
+    <rect class="track" width="726" height="16" rx="8"/>
+    <g class="bar d2"><rect width="552" height="16" rx="8" fill="url(#f2)"/><rect width="552" height="16" rx="8" fill="url(#sheen)"/></g>
+  </g>
+
+  <g transform="translate(44,146)">
+    <circle cx="6" cy="8" r="5" fill="#A855F7"/>
+    <text class="lbl" x="24" y="14">Metrics, analytics &amp; experiments</text>
+  </g>
+  <g transform="translate(430,146)">
+    <rect class="track" width="726" height="16" rx="8"/>
+    <g class="bar d3"><rect width="508" height="16" rx="8" fill="url(#f3)"/><rect width="508" height="16" rx="8" fill="url(#sheen)"/></g>
+  </g>
+
+  <g transform="translate(44,202)">
+    <circle cx="6" cy="8" r="5" fill="#EC4899"/>
+    <text class="lbl" x="24" y="14">Applied GenAI &amp; prototyping</text>
+  </g>
+  <g transform="translate(430,202)">
+    <rect class="track" width="726" height="16" rx="8"/>
+    <g class="bar d4"><rect width="464" height="16" rx="8" fill="url(#f4)"/><rect width="464" height="16" rx="8" fill="url(#sheen)"/></g>
+  </g>
+</svg>

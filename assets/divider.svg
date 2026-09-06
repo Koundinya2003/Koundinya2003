@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dl" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0"    stop-color="#6366F1" stop-opacity="0"/>
+      <stop offset=".22"  stop-color="#6366F1" stop-opacity=".55"/>
+      <stop offset=".5"   stop-color="#22D3EE" stop-opacity=".85"/>
+      <stop offset=".78"  stop-color="#8B5CF6" stop-opacity=".55"/>
+      <stop offset="1"    stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#A5F3FC" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#A5F3FC" stop-opacity="0"/>
+    </radialGradient>
+    <style><![CDATA[
+      .spark{opacity:0;animation:run 7s cubic-bezier(.65,0,.35,1) infinite}
+      @keyframes run{0%{transform:translateX(0);opacity:0}12%{opacity:1}86%{opacity:1}100%{transform:translateX(1020px);opacity:0}}
+    ]]></style>
+  </defs>
+  <rect x="0" y="11" width="1200" height="2" rx="1" fill="url(#dl)"/>
+  <g transform="translate(90 0)"><g class="spark">
+    <ellipse cx="0" cy="12" rx="46" ry="9" fill="url(#glow)"/>
+    <circle cx="0" cy="12" r="3" fill="#ECFEFF"/>
+  </g></g>
+  <g fill="#22D3EE" fill-opacity=".8">
+    <circle cx="576" cy="12" r="2"/>
+    <circle cx="600" cy="12" r="3"/>
+    <circle cx="624" cy="12" r="2"/>
+  </g>
+</svg>

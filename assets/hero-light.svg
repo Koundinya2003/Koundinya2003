@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Aditya K Koundinya - Product Manager for data and AI products">
+  <title>Aditya K Koundinya — Product Manager</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".52" stop-color="#F3F6FF"/>
+      <stop offset="1" stop-color="#E7EDFF"/>
+    </linearGradient>
+    <filter id="blur" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="82"/>
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="340" rx="28"/></clipPath>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" fill="none" stroke="#4F46E5" stroke-opacity=".13" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="gfade" cx=".5" cy=".08" r=".95">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gmask"><rect width="1200" height="340" fill="url(#gfade)"/></mask>
+    <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="560" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#4338CA"/>
+      <stop offset=".34" stop-color="#0F172A"/>
+      <stop offset=".64" stop-color="#0891B2"/>
+      <stop offset="1" stop-color="#4338CA"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-560 0" to="0 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+      .kicker{font-size:17px;font-weight:700;letter-spacing:7px;fill:#0E7490;opacity:1}
+      .name{font-size:68px;font-weight:800;letter-spacing:-1.6px}
+      .tag{font-size:21px;font-weight:500;fill:#475569;opacity:0}
+      .pilltext{font-size:15px;font-weight:600;fill:#4338CA}
+      .mark{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:17px;font-weight:700;fill:#4338CA;letter-spacing:1px}
+      .blob{animation:drift 20s ease-in-out infinite}
+      .b2{animation-duration:26s;animation-delay:-7s}
+      .b3{animation-duration:31s;animation-delay:-14s}
+      @keyframes drift{
+        0%,100%{transform:translate(0,0) scale(1)}
+        33%{transform:translate(70px,-34px) scale(1.14)}
+        66%{transform:translate(-52px,28px) scale(.9)}
+      }
+      @keyframes cyc{
+        0%{opacity:0;visibility:hidden;transform:translateY(10px)}
+        1%{visibility:visible}
+        5%{opacity:1;transform:translateY(0)}
+        28%{opacity:1;transform:translateY(0)}
+        33%{opacity:0;transform:translateY(-10px)}
+        34%{visibility:hidden}
+        100%{opacity:0;visibility:hidden;transform:translateY(-10px)}
+      }
+      .l1{opacity:1;animation:cyc 15s ease-in-out infinite}
+      .l2{animation:cyc 15s ease-in-out infinite;animation-delay:5s}
+      .l3{animation:cyc 15s ease-in-out infinite;animation-delay:10s}
+      .dot{animation:pulse 2.4s ease-in-out infinite}
+      @keyframes pulse{0%,100%{opacity:1}50%{opacity:.28}}
+      .p{animation:twinkle 6s ease-in-out infinite}
+      .p2{animation-delay:1.2s}.p3{animation-delay:2.4s}.p4{animation-delay:3.6s}.p5{animation-delay:4.8s}.p6{animation-delay:2s}
+      @keyframes twinkle{0%,100%{opacity:.15;transform:translateY(0)}50%{opacity:.9;transform:translateY(-6px)}}
+    ]]></style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+
+    <g filter="url(#blur)" opacity=".72">
+      <g transform="translate(235,112)"><circle class="blob b1" r="172" fill="#818CF8"/></g>
+      <g transform="translate(955,238)"><circle class="blob b2" r="192" fill="#22D3EE"/></g>
+      <g transform="translate(650,34)"><circle class="blob b3" r="150" fill="#A78BFA"/></g>
+    </g>
+
+    <rect width="1200" height="340" fill="url(#grid)" mask="url(#gmask)"/>
+
+    <g fill="#6366F1">
+      <circle class="p"  cx="150"  cy="250" r="2.5"/>
+      <circle class="p p2" cx="300" cy="88"  r="2"/>
+      <circle class="p p3" cx="880" cy="96"  r="2.5"/>
+      <circle class="p p4" cx="1060" cy="180" r="2"/>
+      <circle class="p p5" cx="410" cy="290" r="2"/>
+      <circle class="p p6" cx="790" cy="286" r="2.5"/>
+    </g>
+
+    <g>
+      <rect x="34" y="26" width="46" height="46" rx="15" fill="#6366F1" fill-opacity=".10" stroke="#6366F1" stroke-opacity=".45"/>
+      <text class="mark" x="57" y="56" text-anchor="middle">AK</text>
+    </g>
+
+    <g>
+      <rect x="940" y="26" width="222" height="40" rx="20" fill="#6366F1" fill-opacity=".09" stroke="#6366F1" stroke-opacity=".45"/>
+      <circle class="dot" cx="966" cy="46" r="5" fill="#059669"/>
+      <text class="pilltext" x="983" y="51">Open to Product roles</text>
+    </g>
+
+    <text class="kicker" x="600" y="112" text-anchor="middle">PRODUCT · DATA · AI</text>
+    <text class="name"   x="600" y="186" text-anchor="middle" fill="url(#shine)">Aditya K Koundinya</text>
+    <rect x="520" y="208" width="160" height="3" rx="1.5" fill="url(#rule)"/>
+
+    <g>
+      <text class="tag l1" x="600" y="254" text-anchor="middle">Turning data into decisions — and ideas into shipped products.</text>
+      <text class="tag l2" x="600" y="254" text-anchor="middle">PRDs, KPI trees and roadmaps that survive contact with real users.</text>
+      <text class="tag l3" x="600" y="254" text-anchor="middle">Prototyping with LLMs to prove the idea before it hits the backlog.</text>
+    </g>
+  </g>
+
+  <rect x=".75" y=".75" width="1198.5" height="338.5" rx="27.25" fill="none" stroke="#6366F1" stroke-opacity=".28" stroke-width="1.5"/>
+</svg>

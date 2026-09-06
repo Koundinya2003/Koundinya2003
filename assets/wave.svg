@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="132" viewBox="0 0 1200 132" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4338CA"/><stop offset=".5" stop-color="#6366F1"/><stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0891B2"/><stop offset=".55" stop-color="#22D3EE"/><stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8B5CF6"/><stop offset=".5" stop-color="#38BDF8"/><stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="vfade" x1="0" y1="0" x2="0" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="vm"><rect width="1200" height="132" fill="url(#vfade)"/></mask>
+    <path id="wv" d="M0 66c75-34 225-34 300 0s225 34 300 0 225-34 300 0 225 34 300 0 225-34 300 0 225 34 300 0 225-34 300 0 225 34 300 0V132H0Z"/>
+    <style><![CDATA[
+      .lane{animation:slide 14s linear infinite}
+      .s2{animation-duration:19s;animation-direction:reverse}
+      .s3{animation-duration:25s}
+      @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-1200px)}}
+    ]]></style>
+  </defs>
+  <g mask="url(#vm)">
+    <g class="lane s3" opacity=".32"><use href="#wv" xlink:href="#wv" y="26" fill="url(#w3)"/></g>
+    <g class="lane s2" opacity=".42"><use href="#wv" xlink:href="#wv" y="12" fill="url(#w2)"/></g>
+    <g class="lane"    opacity=".8"><use href="#wv" xlink:href="#wv" fill="url(#w1)"/></g>
+  </g>
+</svg>
