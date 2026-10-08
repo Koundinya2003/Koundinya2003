@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="490" viewBox="0 0 1200 490" role="img" aria-label="Panel A: variance in ratings. Valence 4 percent person, 49 percent song, 47 percent personal reaction. Arousal 4 percent person, 67 percent song, 29 percent personal reaction. Panel B: preregistered confirmatory tests. H1 arousal to posterior alpha, beta -0.08, 95% CI -0.24 to 0.08, p = .33. H2 valence to frontal alpha asymmetry, beta 0.06, 95% CI -0.10 to 0.22, p = .45. Both intervals include zero. H3 chi-squared(1) = 1.8, p = .18.">
+<title>MET EEG study — rating variance and confirmatory test results</title>
+<defs><style><![CDATA[
+  text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  .ptitle{font-size:12.5px;font-weight:700;letter-spacing:1.3px;fill:#8A94A1}
+  .psub{font-size:14px;font-weight:450;fill:#B5BFCB}
+  .legend{font-size:13.5px;font-weight:500;fill:#B5BFCB}
+  .rowlab{font-size:16px;font-weight:600;fill:#F0F3F6}
+  .inbar{font-size:12.5px;font-weight:650;font-variant-numeric:tabular-nums}
+  .outbar{font-size:12.5px;font-weight:600;fill:#B5BFCB;font-variant-numeric:tabular-nums}
+  .hid{font-size:15px;font-weight:700;fill:#F0F3F6}
+  .hdesc{font-size:13px;font-weight:450;fill:#B5BFCB}
+  .tick{font-size:12.5px;fill:#8A94A1;font-variant-numeric:tabular-nums}
+  .val{font-size:14px;font-weight:500;fill:#F0F3F6;font-variant-numeric:tabular-nums}
+  .foot{font-size:12.5px;font-weight:450;fill:#8A94A1}
+]]></style></defs>
+<rect width="1200" height="490" rx="14" fill="#11161D"/>
+<text class="ptitle" x="32" y="36">A · WHERE THE VARIATION IN RATINGS COMES FROM</text>
+<rect x="150" y="56" width="11" height="11" rx="2.5" fill="#3987e5"/>
+<text class="legend" x="168" y="66">Person's habit</text>
+<rect x="301.6" y="56" width="11" height="11" rx="2.5" fill="#d95926"/>
+<text class="legend" x="319.6" y="66">The song</text>
+<rect x="408.8" y="56" width="11" height="11" rx="2.5" fill="#199e70"/>
+<text class="legend" x="426.8" y="66">Personal reaction</text>
+<text class="rowlab" x="32" y="124">Valence</text>
+<rect x="150.00" y="108" width="40.56" height="22" fill="#3987e5"/>
+<path d="M170.28,105 V96" stroke="#3A4452" stroke-width="1"/>
+<text class="outbar" x="170.28" y="91" text-anchor="middle">4%</text>
+<rect x="192.56" y="108" width="496.86" height="22" fill="#d95926"/>
+<text class="inbar" x="440.99" y="123" text-anchor="middle" fill="#0B0B0B">49%</text>
+<path d="M691.42,108.00 H1164.00 Q1168.00,108.00 1168.00,112.00 V126.00 Q1168.00,130.00 1164.00,130.00 H691.42 Z" fill="#199e70"/>
+<text class="inbar" x="929.71" y="123" text-anchor="middle" fill="#0B0B0B">47%</text>
+<text class="rowlab" x="32" y="176">Arousal</text>
+<rect x="150.00" y="160" width="40.56" height="22" fill="#3987e5"/>
+<path d="M170.28,157 V148" stroke="#3A4452" stroke-width="1"/>
+<text class="outbar" x="170.28" y="143" text-anchor="middle">4%</text>
+<rect x="192.56" y="160" width="679.38" height="22" fill="#d95926"/>
+<text class="inbar" x="532.25" y="175" text-anchor="middle" fill="#0B0B0B">67%</text>
+<path d="M873.94,160.00 H1164.00 Q1168.00,160.00 1168.00,164.00 V178.00 Q1168.00,182.00 1164.00,182.00 H873.94 Z" fill="#199e70"/>
+<text class="inbar" x="1020.97" y="175" text-anchor="middle" fill="#0B0B0B">29%</text>
+<path d="M32,212 H1168" stroke="#232C38" stroke-width="1"/>
+<text class="ptitle" x="32" y="250">B · PREREGISTERED CONFIRMATORY TESTS</text>
+<text class="psub" x="32" y="272">Standardised β with 95% CI · both intervals include zero</text>
+<path d="M290.00,288 V404" stroke="#232C38" stroke-width="1"/>
+<path d="M391.67,288 V404" stroke="#232C38" stroke-width="1"/>
+<path d="M493.33,288 V404" stroke="#232C38" stroke-width="1"/>
+<path d="M696.67,288 V404" stroke="#232C38" stroke-width="1"/>
+<path d="M798.33,288 V404" stroke="#232C38" stroke-width="1"/>
+<path d="M900.00,288 V404" stroke="#232C38" stroke-width="1"/>
+<path d="M595.00,288 V404" stroke="#3A4452" stroke-width="1"/>
+<text class="tick" x="290.00" y="428" text-anchor="middle">−0.30</text>
+<text class="tick" x="391.67" y="428" text-anchor="middle">−0.20</text>
+<text class="tick" x="493.33" y="428" text-anchor="middle">−0.10</text>
+<text class="tick" x="595.00" y="428" text-anchor="middle">0.00</text>
+<text class="tick" x="696.67" y="428" text-anchor="middle">0.10</text>
+<text class="tick" x="798.33" y="428" text-anchor="middle">0.20</text>
+<text class="tick" x="900.00" y="428" text-anchor="middle">0.30</text>
+<text class="hid" x="32" y="317">H1</text>
+<text class="hdesc" x="32" y="335">Arousal → posterior α</text>
+<path d="M351.00,320 H676.33" stroke="#3987e5" stroke-width="2" stroke-linecap="butt"/>
+<path d="M351.00,314 V326" stroke="#3987e5" stroke-width="2"/>
+<path d="M676.33,314 V326" stroke="#3987e5" stroke-width="2"/>
+<circle cx="513.67" cy="320" r="6" fill="#3987e5" stroke="#11161D" stroke-width="2"/>
+<text class="val" x="930" y="325">−0.08  [−0.24, 0.08]  ·  p = .33</text>
+<text class="hid" x="32" y="369">H2</text>
+<text class="hdesc" x="32" y="387">Valence → frontal α asymmetry</text>
+<path d="M493.33,372 H818.67" stroke="#3987e5" stroke-width="2" stroke-linecap="butt"/>
+<path d="M493.33,366 V378" stroke="#3987e5" stroke-width="2"/>
+<path d="M818.67,366 V378" stroke="#3987e5" stroke-width="2"/>
+<circle cx="656.00" cy="372" r="6" fill="#3987e5" stroke="#11161D" stroke-width="2"/>
+<text class="val" x="930" y="377">0.06  [−0.10, 0.22]  ·  p = .45</text>
+<text class="foot" x="32" y="466">H3 (slopes vary between people): χ²(1) = 1.8, p = .18 · 105 exploratory tests, none survived FDR correction · N = 20, 395 clean trials</text>
+<rect x=".5" y=".5" width="1199" height="489" rx="13.5" fill="none" stroke="#2B3440"/>
+</svg>

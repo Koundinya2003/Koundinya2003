@@ -1,8 +1,14 @@
-# Aditya K Koundinya
+<div align="center">
 
-**Computational cognitive science** · Memory, attention and decision · CSE graduate
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+  <img alt="Aditya K Koundinya — Computational cognitive science. Memory, attention and decision. CSE graduate." src="./assets/hero-dark.svg" width="100%">
+</picture>
 
 [LinkedIn](https://www.linkedin.com/in/adityakkoundinya/) · [Email](mailto:aditya003koundinya@gmail.com)
+
+</div>
 
 ## Research interests
 
@@ -11,6 +17,12 @@ I study the mind as an information processing system. The questions that pull me
 * Why does working memory hold so little, and is its limit a fixed number of slots or a shared resource?
 * How does attention allocate a limited capacity across competing inputs?
 * How do decisions emerge from noisy evidence, and how can signal detection theory separate sensitivity from bias?
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/questions-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/questions-light.svg">
+  <img alt="Three schematic model sketches. Working memory: precision against set size, a slot model with a kink at k items beside a smoothly declining resource model. Attention: one fixed-width capacity bar split into one, two and four shares. Decision: noisy evidence accumulation paths rising from a start point until one of two bounds is reached." src="./assets/questions-dark.svg" width="100%">
+</picture>
 
 My background in Computer Science and Engineering gives me formal logic, probability, algorithms and code for simulation and statistical modelling. I want to use these to build and test formal models of cognition.
 
@@ -29,6 +41,12 @@ My background in Computer Science and Engineering gives me formal logic, probabi
 3. These slopes vary between people.
 
 **Result.** All three confirmatory tests were null, and no exploratory test survived FDR correction. The pattern held across six alternative analysis choices. Limitations are documented in full.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/met-figure-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/met-figure-light.svg">
+  <img alt="Panel A, where the variation in ratings comes from: valence is 4 percent person, 49 percent song, 47 percent personal reaction; arousal is 4 percent person, 67 percent song, 29 percent personal reaction. Panel B, preregistered confirmatory tests, standardised beta with 95 percent confidence interval: H1 arousal to posterior alpha is -0.08, CI -0.24 to 0.08, p = .33; H2 valence to frontal alpha asymmetry is 0.06, CI -0.10 to 0.22, p = .45. Both intervals include zero. H3 chi-squared(1) = 1.8, p = .18. 105 exploratory tests, none survived FDR correction. N = 20, 395 clean trials." src="./assets/met-figure-dark.svg" width="100%">
+</picture>
 
 **Methods.** R, lme4, Welch spectra, Bonferroni and Benjamini Hochberg correction, sensitivity analysis, full reproducibility from a single script.
 
