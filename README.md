@@ -73,31 +73,39 @@ A single file study dashboard built for cognitive science: topic search with exp
 
 **Open science:** preregistration, reproducible pipelines, open datasets
 
-## Earlier work: product and data
+## Projects
 
 Before moving into cognitive science I worked in data analytics at Bosch and completed the NextLeap product fellowship. That work trained me in hypothesis driven user research and measurement.
 
-**Built with AI**
+### Research
+
+* [The Song or the Self?](https://github.com/Koundinya2003/met-eeg-project-push): a preregistered EEG study of personal musical emotion
+* [Study Hub](https://github.com/Koundinya2003/study-hub): a study dashboard built for cognitive science
+
+### AI assistants
 
 * [Blinkit, Intent to Basket](https://github.com/Koundinya2003/Blinkit-Ai_assistantV1): tell it the outcome (a dish, a head count, a budget) and it builds the basket
 * [Shopping AI Assistant](https://github.com/Koundinya2003/Shopping-Ai_assistant): cart aware grocery recommendations with plain language explanations
 * [Mutual fund FAQ assistant](https://github.com/Koundinya2003/MF_FAQ_CB): facts only answers about Mirae Asset schemes, each with an official source link
 * [Wealth Monitor](https://github.com/Koundinya2003/wealth-monitor-review-intelligence): an AI personal finance coach for Indian users
 * [AI Discovery Engine](https://github.com/Koundinya2003/AI-Discovery-Engine): theme discovery across large sets of app reviews
-* [Nykaa Fit](https://github.com/Koundinya2003/nykaa-fit-mvp): a size recommendation experiment with an A/B test
+
+### Job search tools
+
 * [Recruiter Info](https://github.com/Koundinya2003/Recruiter_info): a job search tool that validates every posting before showing it
 * [Claude job plugin](https://github.com/Koundinya2003/Claude-job-plugin): job discovery, scoring and application tracking inside Claude
 
-**Product thinking**
+### Product thinking
 
 * [Prioritization, Metrics and Growth](https://github.com/Koundinya2003/Prioritization-Metrics-Growth): why urban Indian mobile users avoid voice input, from interviews and UX analysis
 * [Engati pitch](https://github.com/Koundinya2003/Engati-Pitch-PRD): an executive business case, proved against a six KPI scorecard by day 180
 * [Eureka teardown](https://github.com/Koundinya2003/Eureka_PRD): a product teardown of a Class 10 learning app and its language barrier
 * [n8n teardown](https://github.com/Koundinya2003/n8n-product-teardown): onboarding gaps, activation drop offs and blank canvas paralysis
+* [Nykaa Fit](https://github.com/Koundinya2003/nykaa-fit-mvp): a size recommendation experiment with an A/B test
 
-**More**
+### Portfolio
 
-* [Portfolio](https://github.com/Koundinya2003/Portfolio)
+* [Portfolio](https://github.com/Koundinya2003/Portfolio): case studies and the product loop
 * [All repositories](https://github.com/Koundinya2003?tab=repositories)
 
 ## Rebuilding the panels
