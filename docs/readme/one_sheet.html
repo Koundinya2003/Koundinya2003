@@ -1,0 +1,371 @@
+<title>Aditya K Koundinya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Identity: a psychophysics lab screen. Neutral stimulus grey, a fixation cross, two response bounds (cobalt and amber), evidence that drifts until it decides. */
+:root {
+  --bg: #e4e5e8;
+  --panel: #f3f3f5;
+  --ink: #15171c;
+  --muted: #5a5e6a;
+  --rule: #c6c8cf;
+  --a: #2643c4;
+  --b: #b86f00;
+  --a-soft: #d9def5;
+  --b-soft: #f1e2c8;
+  --display: "Instrument Serif", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141519; --panel: #1c1d23; --ink: #e9eaee; --muted: #9a9daa; --rule: #33353f;
+    --a: #8fa3ff; --b: #f2b04a; --a-soft: #262c4a; --b-soft: #3a2f1c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141519; --panel: #1c1d23; --ink: #e9eaee; --muted: #9a9daa; --rule: #33353f;
+  --a: #8fa3ff; --b: #f2b04a; --a-soft: #262c4a; --b-soft: #3a2f1c;
+}
+* { box-sizing: border-box; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.sheet { width: 960px; margin: 0 auto; padding: 16px; display: grid; gap: 14px; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  padding: 30px 34px 32px;
+  position: relative;
+}
+.panel::before, .panel::after {
+  content: ""; position: absolute; width: 14px; height: 14px; border-color: var(--ink); border-style: solid;
+}
+.panel::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.panel::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+.tag { font-family: var(--mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; gap: 14px; align-items: center; }
+.tag b { color: var(--a); font-weight: 500; }
+.tag i { flex: 1; height: 1px; background: var(--rule); font-style: normal; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 40px; line-height: 1.05; margin: 14px 0 6px; letter-spacing: -.01em; }
+h2 em { color: var(--a); }
+.lede { color: var(--muted); max-width: 640px; }
+
+/* ---------- hero ---------- */
+.hero { display: grid; grid-template-columns: 1fr 380px; gap: 30px; padding-top: 34px; }
+.hero h1 { font-family: var(--display); font-weight: 400; font-size: 76px; line-height: .95; letter-spacing: -.02em; margin: 18px 0 14px; }
+.hero h1 em { color: var(--a); }
+.hero .field { font-size: 19px; line-height: 1.4; max-width: 440px; }
+.hero .field b { font-weight: 600; }
+.hero .stance { margin-top: 18px; font-family: var(--display); font-style: italic; font-size: 24px; line-height: 1.25; color: var(--muted); max-width: 450px; }
+.hero .meta { margin-top: 22px; font-family: var(--mono); font-size: 12px; color: var(--muted); display: flex; gap: 18px; }
+.hero .meta span::before { content: "+ "; color: var(--b); }
+.ddm { border: 1px solid var(--rule); background: var(--bg); position: relative; align-self: start; }
+.ddm svg { display: block; }
+.ddm .cap { font-family: var(--mono); font-size: 10.5px; color: var(--muted); padding: 8px 12px; border-top: 1px solid var(--rule); letter-spacing: .04em; }
+.trace { fill: none; stroke-width: 1.6; stroke-linejoin: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; animation: draw 10s linear infinite; }
+.trace.up { stroke: var(--a); }
+.trace.down { stroke: var(--b); }
+.hit { animation: hit 10s linear infinite; transform-box: fill-box; transform-origin: center; }
+.hit.up { fill: var(--a); } .hit.down { fill: var(--b); }
+@keyframes draw {
+  0% { stroke-dashoffset: 1; opacity: 1; }
+  22% { stroke-dashoffset: 0; opacity: 1; }
+  80% { stroke-dashoffset: 0; opacity: .55; }
+  92%, 100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes hit {
+  0%, 21% { opacity: 0; transform: scale(0); }
+  24% { opacity: 1; transform: scale(1.8); }
+  28%, 80% { opacity: 1; transform: scale(1); }
+  92%, 100% { opacity: 0; transform: scale(1); }
+}
+.fix { stroke: var(--ink); stroke-width: 2; animation: blink 2.5s ease-in-out infinite; }
+@keyframes blink { 50% { opacity: .25; } }
+.bound { stroke-width: 2; }
+.bound.up { stroke: var(--a); } .bound.down { stroke: var(--b); }
+.blab { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; }
+.blab.up { fill: var(--a); } .blab.down { fill: var(--b); }
+
+/* ---------- questions ---------- */
+.qs { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 22px; border-top: 2px solid var(--ink); }
+.q { padding: 16px 20px 6px 0; }
+.q + .q { padding-left: 20px; border-left: 1px solid var(--rule); }
+.q .n { font-family: var(--mono); font-size: 11px; color: var(--b); letter-spacing: .12em; }
+.q h3 { font-family: var(--display); font-weight: 400; font-size: 27px; margin: 2px 0 6px; }
+.q p { font-size: 14px; color: var(--muted); min-height: 84px; }
+.q svg { display: block; margin-top: 10px; overflow: visible; }
+.ax { stroke: var(--muted); stroke-width: 1; fill: none; }
+.axl { font-family: var(--mono); font-size: 9.5px; fill: var(--muted); }
+.ln { fill: none; stroke-width: 2.2; stroke-dasharray: 1 1; animation: wipe 1.6s ease-out both; }
+.ln.a { stroke: var(--a); } .ln.b { stroke: var(--b); stroke-dasharray: 1 1; }
+@keyframes wipe { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.d2 { animation-delay: .5s; } .d3 { animation-delay: .9s; } .d4 { animation-delay: 1.3s; } .d5 { animation-delay: 1.7s; }
+.seg { animation: grow .7s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }
+@keyframes grow { from { transform: scaleX(0); } }
+.fa { fill: var(--a); } .fb { fill: var(--b); } .fsa { fill: var(--a-soft); } .fsb { fill: var(--b-soft); }
+.crit { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 4 3; animation: pop .6s 1.6s both; }
+.foot { margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--rule); font-size: 14.5px; color: var(--muted); }
+.foot b { color: var(--ink); font-weight: 600; }
+
+/* ---------- featured ---------- */
+.feat { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; margin-top: 18px; }
+.nums { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--rule); margin: 16px 0 18px; }
+.nums div { padding: 10px 12px; animation: rise .7s both; }
+.nums div + div { border-left: 1px solid var(--rule); }
+.nums strong { display: block; font-family: var(--display); font-size: 38px; line-height: 1; color: var(--a); }
+.nums span { font-family: var(--mono); font-size: 10.5px; color: var(--muted); letter-spacing: .04em; }
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+.nums div:nth-child(2) { animation-delay: .15s; } .nums div:nth-child(3) { animation-delay: .3s; } .nums div:nth-child(4) { animation-delay: .45s; }
+.split h4, .hyp h4 { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 8px; }
+.bar { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 10px; margin: 7px 0; font-size: 13px; }
+.bar .track { display: flex; height: 22px; font-family: var(--mono); font-size: 10.5px; }
+.bar .track > div { display: flex; align-items: center; padding-left: 6px; overflow: hidden; white-space: nowrap; }
+.bar .song { background: var(--a); color: var(--panel); }
+.bar .self { background: var(--b); color: var(--panel); }
+.bar .rest { background: var(--rule); }
+.key { font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+.key i { display: inline-block; width: 10px; height: 10px; margin: 0 5px 0 12px; vertical-align: -1px; }
+.key i:first-child { margin-left: 0; }
+.hrow { display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.hrow:first-of-type { border-top: 2px solid var(--ink); }
+.hrow .id { font-family: var(--display); font-size: 28px; color: var(--a); }
+.hrow p { font-size: 14px; line-height: 1.35; }
+.stamp { font-family: var(--mono); font-size: 10.5px; font-weight: 500; letter-spacing: .1em; color: var(--b); border: 1.5px solid var(--b); padding: 4px 7px; transform: rotate(-4deg); animation: stamp .45s cubic-bezier(.3,1.6,.5,1) both; }
+@keyframes stamp { from { opacity: 0; transform: rotate(-4deg) scale(2.4); } }
+.s1 { animation-delay: .9s; } .s2 { animation-delay: 1.3s; } .s3 { animation-delay: 1.7s; }
+.verdict { margin-top: 14px; font-family: var(--display); font-size: 25px; line-height: 1.2; }
+.verdict em { color: var(--b); }
+.small { font-size: 13.5px; color: var(--muted); margin-top: 8px; }
+
+/* ---------- next and toolkit ---------- */
+.two { display: grid; grid-template-columns: 1.1fr 1fr; gap: 34px; margin-top: 18px; }
+.nx { display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--rule); animation: rise .6s both; }
+.nx:first-of-type { border-top: 2px solid var(--ink); }
+.nx:nth-of-type(2) { animation-delay: .25s; } .nx:nth-of-type(3) { animation-delay: .5s; }
+.nx svg { margin-top: 3px; }
+.nx h3 { font-size: 15.5px; font-weight: 600; }
+.nx p { font-size: 13.5px; color: var(--muted); }
+.grp { margin-bottom: 16px; }
+.grp h4 { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips span { font-size: 13px; padding: 4px 10px; border: 1px solid var(--rule); background: var(--bg); animation: pop .4s both; }
+.chips.hot span { border-color: var(--a); color: var(--a); }
+@keyframes pop { from { opacity: 0; transform: scale(.6); } }
+
+/* ---------- projects ---------- */
+.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 26px; margin-top: 20px; }
+.col h4 { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 500; padding-bottom: 8px; border-bottom: 2px solid var(--ink); display: flex; justify-content: space-between; }
+.col h4 span { color: var(--a); }
+.pr { padding: 9px 0 9px 16px; border-bottom: 1px solid var(--rule); position: relative; animation: rise .5s both; }
+.pr::before { content: ""; position: absolute; left: 0; top: 16px; width: 7px; height: 7px; border-radius: 50%; background: var(--a); }
+.col.b .pr::before { background: var(--b); }
+.col.c .pr::before { background: transparent; border: 1.5px solid var(--ink); width: 5px; height: 5px; }
+.pr b { font-weight: 600; font-size: 14.5px; display: block; }
+.pr span { font-size: 12.8px; color: var(--muted); line-height: 1.35; display: block; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 700px) { .sheet { width: auto; } }
+</style>
+
+<main class="sheet">
+
+<section class="panel hero" data-panel="01_hero" data-alt="Aditya K Koundinya. Computational cognitive science: memory, attention and decision. CSE graduate. I study the mind as an information processing system, and I want to build and test formal models of how it works. The animation shows noisy evidence drifting from a starting point until it reaches one of two decision bounds.">
+  <div>
+    <div class="tag"><b>Profile</b><span>Research</span><i></i></div>
+    <h1>Aditya K<br><em>Koundinya</em></h1>
+    <p class="field"><b>Computational cognitive science.</b> Memory, attention and decision.</p>
+    <p class="stance">I study the mind as an information processing system, and I want to build and test formal models of how it works.</p>
+    <div class="meta"><span>CSE graduate</span><span>R, Python, SQL</span><span>Open science</span></div>
+  </div>
+  <div class="ddm">
+    <svg id="ddm" width="378" height="300" viewBox="0 0 378 300"></svg>
+    <div class="cap">Evidence accumulates, noisily, until it hits a bound.</div>
+  </div>
+</section>
+
+<section class="panel" data-panel="02_questions" data-alt="Research interests: the logical architecture of the mind. Memory: why does working memory hold so little, and is its limit a fixed number of slots or a shared resource? The sketch plots precision against set size, a slot model with a kink at k items beside a smoothly declining resource model. Attention: how does attention allocate a limited capacity across competing inputs? One fixed capacity bar is split into one, two and four shares. Decision: how do decisions emerge from noisy evidence, and how can signal detection theory separate sensitivity from bias? Two overlapping noise and signal distributions with a criterion line. My background in Computer Science and Engineering gives me formal logic, probability, algorithms and code for simulation and statistical modelling.">
+  <div class="tag"><b>01</b><span>Research interests</span><i></i></div>
+  <h2>The questions that pull me in are about the mind's <em>logical architecture.</em></h2>
+  <div class="qs">
+    <div class="q">
+      <div class="n">MEMORY</div>
+      <h3>Slots or a resource?</h3>
+      <p>Why does working memory hold so little, and is its limit a fixed number of slots or a shared resource?</p>
+      <svg width="250" height="120" viewBox="0 0 250 120">
+        <path class="ax" d="M20 8 V100 H240"/>
+        <text class="axl" x="20" y="116">set size</text>
+        <text class="axl" x="0" y="10" transform="rotate(-90 10 10)" text-anchor="end">precision</text>
+        <path class="ln a" pathLength="1" d="M24 22 H120 L132 96 H236"/>
+        <path id="resource" class="ln b d2" pathLength="1" d=""/>
+        <line x1="126" y1="100" x2="126" y2="104" class="ax"/><text class="axl" x="122" y="114">k</text>
+        <text class="axl" x="160" y="22" style="fill:var(--a)">slots</text>
+        <text class="axl" x="160" y="58" style="fill:var(--b)">resource</text>
+      </svg>
+    </div>
+    <div class="q">
+      <div class="n">ATTENTION</div>
+      <h3>One capacity, many inputs</h3>
+      <p>How does attention allocate a limited capacity across competing inputs?</p>
+      <svg width="250" height="120" viewBox="0 0 250 120">
+        <text class="axl" x="0" y="20">1</text><text class="axl" x="0" y="60">2</text><text class="axl" x="0" y="100">4</text>
+        <rect class="seg fa" x="16" y="8" width="226" height="18"/>
+        <rect class="seg fa d2" x="16" y="48" width="112" height="18"/><rect class="seg fsa d2" x="130" y="48" width="112" height="18"/>
+        <rect class="seg fa d3" x="16" y="88" width="55" height="18"/><rect class="seg fsa d3" x="73" y="88" width="55" height="18"/><rect class="seg fa d3" x="130" y="88" width="55" height="18"/><rect class="seg fsa d3" x="187" y="88" width="55" height="18"/>
+        <text class="axl" x="16" y="42">same total, smaller shares</text>
+      </svg>
+    </div>
+    <div class="q">
+      <div class="n">DECISION</div>
+      <h3>Sensitivity or bias?</h3>
+      <p>How do decisions emerge from noisy evidence, and how can signal detection theory separate sensitivity from bias?</p>
+      <svg width="250" height="120" viewBox="0 0 250 120">
+        <path class="ax" d="M10 100 H244"/>
+        <path id="noise" class="ln b" pathLength="1" d=""/>
+        <path id="signal" class="ln a d2" pathLength="1" d=""/>
+        <line class="crit" x1="128" y1="10" x2="128" y2="104"/>
+        <text class="axl" x="134" y="8">criterion</text>
+        <text class="axl" x="48" y="116" style="fill:var(--b)">noise</text>
+        <text class="axl" x="170" y="116" style="fill:var(--a)">signal</text>
+      </svg>
+    </div>
+  </div>
+  <p class="foot"><b>Why I can do it:</b> my background in Computer Science and Engineering gives me formal logic, probability, algorithms and code for simulation and statistical modelling.</p>
+</section>
+
+<section class="panel" data-panel="03_featured" data-alt="Featured research: The Song or the Self? Within individuals, is self reported emotion during music listening (valence and arousal) linked to EEG band power, beyond what is shared across listeners for the same song? Preregistered before any results were seen, using the MET dataset on OpenNeuro (ds008701): 20 listeners, 20 songs, 66 EEG channels, 395 clean trials. Ratings are split into song consensus and personal deviation: valence is 49 percent song and 47 percent personal, arousal is 67 percent song and 29 percent personal. Three preregistered hypotheses, all not supported: H1, more aroused than usual leads to lower posterior alpha. H2, more pleasant than usual leads to more left frontal activity. H3, people differ in these links. Of 105 exploratory tests, none survived correction. Mixed effects models in R with lme4.">
+  <div class="tag"><b>02</b><span>Featured research</span><i></i></div>
+  <h2>The Song or the Self? <em>Personal musical emotion in scalp EEG.</em></h2>
+  <p class="lede">Within individuals, is self reported emotion during music listening linked to EEG band power, beyond what every listener shares for the same song? Preregistered before any results were seen.</p>
+  <div class="feat">
+    <div>
+      <div class="nums">
+        <div><strong>20</strong><span>listeners</span></div>
+        <div><strong>20</strong><span>songs</span></div>
+        <div><strong>66</strong><span>EEG channels</span></div>
+        <div><strong>395</strong><span>clean trials</span></div>
+      </div>
+      <div class="split">
+        <h4>The key move: split each rating</h4>
+        <div class="bar"><span>Valence</span><div class="track"><div class="song seg" style="width:49%">49% song</div><div class="self seg d2" style="width:47%">47% self</div><div class="rest" style="width:4%"></div></div></div>
+        <div class="bar"><span>Arousal</span><div class="track"><div class="song seg" style="width:67%">67% song</div><div class="self seg d2" style="width:29%">29%</div><div class="rest" style="width:4%"></div></div></div>
+        <p class="key"><i style="background:var(--a)"></i>song consensus (the other listeners) <i style="background:var(--b)"></i>personal deviation</p>
+      </div>
+      <p class="small">MET dataset, OpenNeuro ds008701. R, lme4, mixed effects models with random intercepts for person and song.</p>
+    </div>
+    <div class="hyp">
+      <h4>Three preregistered bets</h4>
+      <div class="hrow"><span class="id">H1</span><p>More aroused than usual, lower posterior alpha</p><span class="stamp s1">NOT SUPPORTED</span></div>
+      <div class="hrow"><span class="id">H2</span><p>More pleasant than usual, more left frontal activity</p><span class="stamp s2">NOT SUPPORTED</span></div>
+      <div class="hrow"><span class="id">H3</span><p>People differ in these links</p><span class="stamp s3">NOT SUPPORTED</span></div>
+      <p class="verdict">0 of 3 supported, and <em>none of 105</em> exploratory tests survived correction.</p>
+      <p class="small">An honest null, reported in full with its limitations.</p>
+    </div>
+  </div>
+</section>
+
+<section class="panel" data-panel="04_next" data-alt="Next: slot versus resource models of working memory capacity, fitted to open change detection data. A signal detection toolkit: d prime, criterion and ROC curves, with simulations. Also built: Study Hub, a single file study dashboard for cognitive science with topic search, top papers, a focus timer and a reading list. Methods toolkit. Modelling and statistics: mixed effects models, hypothesis testing, multiple comparison correction, simulation, signal detection theory. Languages: R, Python, SQL. Open science: preregistration, reproducible pipelines, open datasets.">
+  <div class="tag"><b>03</b><span>Next, and the toolkit</span><i></i></div>
+  <div class="two">
+    <div>
+      <h2 style="margin-top:0">What I am <em>building next</em></h2>
+      <div class="nx">
+        <svg width="24" height="24" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" class="fa"/><rect x="13" y="2" width="9" height="9" class="fa"/><rect x="2" y="13" width="9" height="9" class="fa"/><rect x="13" y="13" width="9" height="9" class="fsa"/></svg>
+        <div><h3>Slots versus resources</h3><p>Models of working memory capacity, fitted to open change detection data.</p></div>
+      </div>
+      <div class="nx">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M2 22 C 4 6, 10 2, 22 2" fill="none" stroke="var(--b)" stroke-width="2.5"/><path d="M2 22 L22 2" stroke="var(--muted)" stroke-dasharray="2 2"/></svg>
+        <div><h3>A signal detection toolkit</h3><p>d prime, criterion and ROC curves, with simulations.</p></div>
+      </div>
+      <div class="nx">
+        <svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="20" fill="none" stroke="var(--ink)" stroke-width="2"/><path d="M7 8 H17 M7 12 H17 M7 16 H13" stroke="var(--a)" stroke-width="2"/></svg>
+        <div><h3>Already built: Study Hub</h3><p>A single file study dashboard for cognitive science: topic search with top papers, a focus timer, a reading list with APA citations, and notes.</p></div>
+      </div>
+    </div>
+    <div>
+      <h2 style="margin-top:0">Methods <em>toolkit</em></h2>
+      <div class="grp"><h4>Modelling and statistics</h4><div class="chips hot">
+        <span>mixed effects models</span><span style="animation-delay:.1s">hypothesis testing</span><span style="animation-delay:.2s">multiple comparison correction</span><span style="animation-delay:.3s">simulation</span><span style="animation-delay:.4s">signal detection theory</span></div></div>
+      <div class="grp"><h4>Languages</h4><div class="chips">
+        <span style="animation-delay:.6s">R</span><span style="animation-delay:.7s">Python</span><span style="animation-delay:.8s">SQL</span></div></div>
+      <div class="grp"><h4>Open science</h4><div class="chips">
+        <span style="animation-delay:1s">preregistration</span><span style="animation-delay:1.1s">reproducible pipelines</span><span style="animation-delay:1.2s">open datasets</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" data-panel="05_projects" data-alt="Projects. Before moving into cognitive science I worked in data analytics at Bosch and completed the NextLeap product fellowship, which trained me in hypothesis driven user research and measurement. Research: The Song or the Self (preregistered EEG study of music and emotion); Study Hub (study dashboard for cognitive science). Built with AI: Blinkit Intent to Basket (tell it the outcome, it builds the basket); Shopping AI Assistant (cart aware grocery picks with explanations); Mutual fund FAQ assistant (facts only answers with an official source link); Wealth Monitor (AI personal finance coach for Indian users); AI Discovery Engine (themes across large sets of app reviews); Nykaa Fit (size recommendation experiment with an A/B test); Recruiter Info (a job search tool that validates every posting); Claude job plugin (job discovery and tracking inside Claude). Product thinking: Prioritization, Metrics and Growth (why urban Indian users avoid voice input); Engati pitch (business case scored against six KPIs); Eureka teardown (removing the language barrier); n8n teardown (blank canvas paralysis in onboarding); Portfolio. Links are listed below this image.">
+  <div class="tag"><b>04</b><span>Projects</span><i></i></div>
+  <h2>Earlier work: <em>product and data.</em></h2>
+  <p class="lede">Before moving into cognitive science I worked in data analytics at Bosch and completed the NextLeap product fellowship. That work trained me in hypothesis driven user research and measurement.</p>
+  <div class="cols">
+    <div class="col">
+      <h4>Research <span>2</span></h4>
+      <div class="pr"><b>The Song or the Self?</b><span>Preregistered EEG study of music and emotion</span></div>
+      <div class="pr" style="animation-delay:.1s"><b>Study Hub</b><span>Study dashboard built for cognitive science</span></div>
+      <h4 style="margin-top:18px">Product thinking <span>4</span></h4>
+      <div class="pr" style="animation-delay:.2s"><b>Prioritization, Metrics and Growth</b><span>Why urban Indian mobile users avoid voice input</span></div>
+      <div class="pr" style="animation-delay:.3s"><b>Engati pitch</b><span>A business case proved against six KPIs by day 180</span></div>
+    </div>
+    <div class="col b">
+      <h4>Built with AI <span>8</span></h4>
+      <div class="pr" style="animation-delay:.2s"><b>Blinkit: Intent to Basket</b><span>Say the outcome, get the basket</span></div>
+      <div class="pr" style="animation-delay:.3s"><b>Shopping AI Assistant</b><span>Cart aware grocery picks, with reasons</span></div>
+      <div class="pr" style="animation-delay:.4s"><b>Mutual fund FAQ assistant</b><span>Facts only answers with a source link</span></div>
+      <div class="pr" style="animation-delay:.5s"><b>Wealth Monitor</b><span>AI personal finance coach for Indian users</span></div>
+      <div class="pr" style="animation-delay:.6s"><b>AI Discovery Engine</b><span>Themes across large sets of app reviews</span></div>
+    </div>
+    <div class="col c">
+      <h4>&nbsp;<span></span></h4>
+      <div class="pr" style="animation-delay:.7s"><b>Nykaa Fit</b><span>Size recommendation experiment with an A/B test</span></div>
+      <div class="pr" style="animation-delay:.8s"><b>Recruiter Info</b><span>Job search that validates every posting first</span></div>
+      <div class="pr" style="animation-delay:.9s"><b>Claude job plugin</b><span>Job discovery and tracking inside Claude</span></div>
+      <div class="pr" style="animation-delay:1s"><b>Eureka teardown</b><span>Growth by removing the language barrier</span></div>
+      <div class="pr" style="animation-delay:1.1s"><b>n8n teardown</b><span>Blank canvas paralysis in onboarding</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+(function () {
+  // seeded random so the build is repeatable
+  let s = 7;
+  const rnd = () => { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; };
+  const gauss = () => { let u = 0; for (let i = 0; i < 6; i++) u += rnd(); return u - 3; };
+  const NS = "http://www.w3.org/2000/svg";
+  const svg = document.getElementById("ddm");
+  const W = 378, top = 48, bot = 252, mid = 150, x0 = 46;
+  const add = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; };
+  add("line", { class: "bound up", x1: x0, y1: top, x2: W - 12, y2: top });
+  add("line", { class: "bound down", x1: x0, y1: bot, x2: W - 12, y2: bot });
+  add("text", { class: "blab up", x: W - 12, y: top - 8, "text-anchor": "end" }).textContent = "CHOICE A";
+  add("text", { class: "blab down", x: W - 12, y: bot + 16, "text-anchor": "end" }).textContent = "CHOICE B";
+  add("line", { class: "fix", x1: x0 - 24, y1: mid, x2: x0 - 10, y2: mid });
+  add("line", { class: "fix", x1: x0 - 17, y1: mid - 7, x2: x0 - 17, y2: mid + 7 });
+  const drifts = [0.9, -0.6, 0.5, 1.2, -0.9, 0.3];
+  drifts.forEach((d, k) => {
+    let x = x0, y = mid, pts = [[x, y]];
+    let tries = 0;
+    do { x = x0; y = mid; pts = [[x, y]];
+      while (y > top && y < bot && x < W - 20) { x += 3.2; y -= d * 1.6 + gauss() * 6.5; pts.push([x, Math.max(top, Math.min(bot, y))]); }
+    } while (y > top && y < bot && ++tries < 50);
+    const last = pts[pts.length - 1];
+    const dir = last[1] <= top + 0.5 ? "up" : last[1] >= bot - 0.5 ? "down" : (d > 0 ? "up" : "down");
+    const delay = (-k * 10 / drifts.length).toFixed(2) + "s";
+    add("path", { class: "trace " + dir, pathLength: 1, d: "M" + pts.map(p => p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" L"), style: "animation-delay:" + delay });
+    add("circle", { class: "hit " + dir, cx: last[0], cy: last[1], r: 4, style: "animation-delay:" + delay });
+  });
+  // resource model: smooth decline
+  let r = "M24 22";
+  for (let i = 1; i <= 42; i++) { const x = 24 + i * 5.05; r += " L" + x.toFixed(1) + " " + (22 + 74 * (1 - Math.exp(-i / 14))).toFixed(1); }
+  document.getElementById("resource").setAttribute("d", r);
+  const curve = (mu) => { let p = ""; for (let x = 12; x <= 242; x += 3) { const z = (x - mu) / 30; p += (p ? " L" : "M") + x + " " + (100 - 82 * Math.exp(-z * z / 2)).toFixed(1); } return p; };
+  document.getElementById("noise").setAttribute("d", curve(96));
+  document.getElementById("signal").setAttribute("d", curve(160));
+})();
+</script>
