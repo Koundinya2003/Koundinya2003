@@ -1,11 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/readme/01_hero_dark.svg">
-  <img src="docs/readme/01_hero_light.svg" width="100%" alt="Aditya K Koundinya. Computational cognitive science: memory, attention and decision. CSE graduate. I study the mind as an information processing system, and I want to build and test formal models of how it works. The animation shows noisy evidence drifting from a starting point until it reaches one of two decision bounds.">
+  <img src="docs/readme/01_hero_light.svg" width="100%" alt="Aditya K Koundinya. Computational cognitive science: emotion, memory, attention and decision. CSE graduate. I study the mind as an information processing system, and I want to build and test formal models of how it works. The animation shows noisy evidence drifting from a starting point until it reaches one of two decision bounds.">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/readme/02_questions_dark.svg">
-  <img src="docs/readme/02_questions_light.svg" width="100%" alt="Research interests: the logical architecture of the mind. Memory: why does working memory hold so little, and is its limit a fixed number of slots or a shared resource? The sketch plots precision against set size, a slot model with a kink at k items beside a smoothly declining resource model. Attention: how does attention allocate a limited capacity across competing inputs? One fixed capacity bar is split into one, two and four shares. Decision: how do decisions emerge from noisy evidence, and how can signal detection theory separate sensitivity from bias? Two overlapping noise and signal distributions with a criterion line. My background in Computer Science and Engineering gives me formal logic, probability, algorithms and code for simulation and statistical modelling.">
+  <img src="docs/readme/02_questions_light.svg" width="100%" alt="Research interests: the logical architecture of the mind. Memory: why does working memory hold so little, and is its limit a fixed number of slots or a shared resource? The sketch plots precision against set size, a slot model with a kink at k items beside a smoothly declining resource model. Attention: how does attention allocate a limited capacity across competing inputs? One fixed capacity bar is split into one, two and four shares. Decision: how do decisions emerge from noisy evidence, and how can signal detection theory separate sensitivity from bias? Two overlapping noise and signal distributions with a criterion line. Where I started: emotion. My first two studies use open EEG data to ask whether a person's own emotional experience shows up in brain activity. It is the same question I bring to memory, attention and decision: what in a response comes from the input, what comes from the person, and does it hold up under a preregistered test? My background in Computer Science and Engineering gives me formal logic, probability, algorithms and code for simulation and statistical modelling.">
 </picture>
 
 <picture>
@@ -20,7 +20,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/readme/05_projects_dark.svg">
-  <img src="docs/readme/05_projects_light.svg" width="100%" alt="Projects. Before moving into cognitive science I worked in data analytics at Bosch and completed the NextLeap product fellowship, which trained me in hypothesis driven user research and measurement. Research: The Song or the Self (preregistered EEG study of music and emotion); Study Hub (study dashboard for cognitive science). Job search tools: Recruiter Info (validates every posting first); Claude job plugin (job discovery and tracking inside Claude). Portfolio: the portfolio site. AI assistants: Blinkit Intent to Basket (say the outcome, get the basket); Shopping AI Assistant (cart aware grocery picks with reasons); Mutual fund FAQ assistant (facts only answers with a source link); Wealth Monitor (AI personal finance coach for Indian users); AI Discovery Engine (themes across large sets of app reviews). Product thinking: Prioritization, Metrics and Growth (why urban Indian users avoid voice input); Engati pitch (business case proved against six KPIs by day 180); Eureka teardown (growth by removing the language barrier); n8n teardown (blank canvas paralysis in onboarding); Nykaa Fit (size recommendation experiment with an A/B test). Links are listed below this image.">
+  <img src="docs/readme/05_projects_light.svg" width="100%" alt="Projects. Before moving into cognitive science I worked in data analytics at Bosch and completed the NextLeap product fellowship, which trained me in hypothesis driven user research and measurement. Research: The Song or the Self (preregistered EEG study of music and emotion); Emotional moments in EEG (preregistered study of self marked emotions during film clips); Study Hub (study dashboard for cognitive science). Job search tools: Recruiter Info (validates every posting first); Claude job plugin (job discovery and tracking inside Claude). Portfolio: the portfolio site. AI assistants: Blinkit Intent to Basket (say the outcome, get the basket); Shopping AI Assistant (cart aware grocery picks with reasons); Mutual fund FAQ assistant (facts only answers with a source link); Wealth Monitor (AI personal finance coach for Indian users); AI Discovery Engine (themes across large sets of app reviews). Product thinking: Prioritization, Metrics and Growth (why urban Indian users avoid voice input); Engati pitch (business case proved against six KPIs by day 180); Eureka teardown (growth by removing the language barrier); n8n teardown (blank canvas paralysis in onboarding); Nykaa Fit (size recommendation experiment with an A/B test). Links are listed below this image.">
 </picture>
 
 ## Contact
@@ -36,11 +36,13 @@ I study the mind as an information processing system. The questions that pull me
 * How does attention allocate a limited capacity across competing inputs?
 * How do decisions emerge from noisy evidence, and how can signal detection theory separate sensitivity from bias?
 
+**Where I started: emotion.** My first two studies use open EEG data to ask whether a person's own emotional experience shows up in brain activity. It is the same question I bring to memory, attention and decision: what in a response comes from the input, what comes from the person, and does it hold up under a preregistered test?
+
 My background in Computer Science and Engineering gives me formal logic, probability, algorithms and code for simulation and statistical modelling. I want to use these to build and test formal models of cognition.
 
 ## Featured research
 
-### [The Song or the Self? Music, emotion and the brain](https://github.com/Koundinya2003/met-eeg-project-push)
+### [The Song or the Self? Music, emotion and the brain](https://github.com/Koundinya2003/The-Song-or-the-Self-Personal-musical-emotion-and-EEG-band-power)
 
 **Question.** Within individuals, is self reported emotional experience (valence and arousal) during music listening associated with EEG band power, beyond what is shared across listeners for the same song?
 
@@ -55,6 +57,14 @@ My background in Computer Science and Engineering gives me formal logic, probabi
 **Result.** All three confirmatory tests were null, and no exploratory test survived FDR correction. The null held across alternative analysis choices. Limitations are documented in full.
 
 **Methods.** R, lme4, Welch spectra, Bonferroni and Benjamini Hochberg correction, sensitivity analysis, full reproducibility from a single script.
+
+### [Self marked emotional moments in EEG](https://github.com/Koundinya2003/Self-marked-emotional-moments-in-the-DENS-EEG-dataset)
+
+**Question.** Do the seconds before a person marks an emotional moment show distinct EEG activity, and does that activity follow the clip's rated valence and arousal?
+
+**Design.** Preregistered secondary analysis of the DENS dataset (OpenNeuro ds003751): participants watched one minute film clips during 128 channel EEG and clicked whenever they felt an emotion. Marked epochs before each click are compared with unmarked epochs of the same clip.
+
+**Result.** None of the four preregistered hypotheses was supported. The one effect in the predicted direction, lower posterior alpha before a click, did not survive FDR correction and looks more like preparation of the click than the felt emotion. The audit also found that 31 of the 40 published EEG files are truncated.
 
 ### [Study Hub](https://github.com/Koundinya2003/study-hub)
 
@@ -79,7 +89,8 @@ Before moving into cognitive science I worked in data analytics at Bosch and com
 
 ### Research
 
-* [The Song or the Self?](https://github.com/Koundinya2003/met-eeg-project-push): a preregistered EEG study of personal musical emotion
+* [The Song or the Self?](https://github.com/Koundinya2003/The-Song-or-the-Self-Personal-musical-emotion-and-EEG-band-power): a preregistered EEG study of personal musical emotion
+* [Self marked emotional moments in EEG](https://github.com/Koundinya2003/Self-marked-emotional-moments-in-the-DENS-EEG-dataset): a preregistered EEG study of emotions people mark while watching film clips
 * [Study Hub](https://github.com/Koundinya2003/study-hub): a study dashboard built for cognitive science
 
 ### AI assistants
